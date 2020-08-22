@@ -12,19 +12,11 @@ body {
     color: #fff;
     line-height: 1.6;
   }
-
+  
   #showcase a {
     text-decoration: none;
 }
 
-#showcase .section-main h1{
-    font-size: 4rem;
-    margin-bottom: 0;
-}
-
-#showcase .section-main h2{
-    font-size: 2rem;
-}
 .section {
     padding: 0.5rem;
 }
@@ -34,11 +26,24 @@ body {
     margin: 0;
     text-align: center;
 }
+
+#particles-js {
+  position: fixed;
+}
+.animate__animated.animate__backInLeft{
+  --animate-duration: 2s;
+}
+.animate__animated.animate__backInRight{
+  --animate-duration: 2s;
+}
+.animate__animated.animate__bounceInUp{
+  --animate-duration: 2s;
+}
 /* Showcase */
 #showcase {
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, crimson, rgb(212, 77, 104));
+    background: linear-gradient(90deg, crimson,rgb(221, 42, 78), rgb(243, 126, 149));
     width: 100%;
     height: 100vh;
     position: relative;
@@ -46,7 +51,7 @@ body {
 }
 
   #showcase .container{
-      margin-top: 25vh;
+      margin-top: 20vh;
   }
 
 .container {
@@ -141,11 +146,18 @@ body {
     margin-top: 3rem;
     font-size: 2rem;
     display: inline-block;
+    border: 1px solid white;
+    transition: all 200ms ease;
+    padding: 10px 20px;
 }
     .why-us:hover{
-        transform: translateY(2px);
-        font-size: 1.7rem;
+        background: white;
+        opacity: 0.7;
     }
+    .fas:hover{
+      color: rgb(46, 62, 78);
+    }
+    
 
 /*media queries */
 
